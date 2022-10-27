@@ -128,4 +128,21 @@ Exercise 06 result
 ['Teddy Bear']
 [True]
 [[], {}]
-...
+'''
+
+#Exercise 07 key value store 
+dictonary_data = {'a': 3, 'b': 1, 'c': 2}
+key_data=[]
+value_data=[]
+for key,value in dictonary_data.items():
+    key_data.append(key)
+    value_data.append(value)
+
+
+print(key_data)
+print(value_data)
+
+'''
+['a', 'b', 'c']
+[3, 1, 2]
+'''
