@@ -92,3 +92,40 @@ Exercise 06 result
 [111, 32, 9, 85]
 [-9, -45, -17, -10]
 '''
+# Exercise 06 
+# raw_data=[3.14, 66, "Teddy Bear", True, [], {}]
+# int_data=[]
+# string_data=[]
+# float_data=[]
+# booler_data=[]
+# bool_data=[]
+# special_data=[]
+
+# for data in raw_data:
+#     if type(data) == int:
+#         int_data.append(data)
+#     elif type(data) == float:
+#         float_data.append(data)
+#     elif type(data) == str:
+#         string_data.append(data)
+#     elif type(data) == bool:
+#         bool_data.append(data)
+#     else:
+#         special_data.append(data)
+
+
+# print(int_data)
+# print(float_data)   
+# print(string_data) 
+# print(bool_data)    
+# print(special_data)
+
+'''
+Exercise 06 result
+
+[66]
+[3.14]
+['Teddy Bear']
+[True]
+[[], {}]
+...
