@@ -1,0 +1,81 @@
+﻿Step: 01 Create a folder Django
+
+
+Step: 02 Create an environment under the Django folder.
+        Command :  python -m venv env
+
+
+Step: 03  Active environment 
+        Command :  . env/Script/Active
+
+
+Step: 04 Install django  
+        Command : py -m pip install django
+
+
+Step: 05 Create a project 
+        Command :  django-admin startproject efahionhome_project
+
+
+Step: 06 Create a app
+        Command : cd efahionhome_project
+        Command : python manage.py startapp efashoinhome_app
+
+
+Step : 07 Start server 
+        Command : python manage.py runserver
+
+
+
+
+Step 08 Go to settings under project and add the following lines
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'efashiohome.app'
+]
+
+
+
+
+Step 09 Go to apps and create a file named urls.py 
+Step 10 Goto project urls.py and include the following lines
+from django.contrib import admin
+from django.urls import path,include
+
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',include('efashiohome_app.urls'))
+]
+Step 11 Create a templates folder under app’s folder and create index.html under templates folder
+
+
+Step 12  Add the following lines view.py under app’s folder
+def home_page(request):
+    return render(request, 'index.html')
+
+
+Step 13 Import home_page function from views.py file so add the following lines 
+from .views import home_page
+urlpatterns = [
+   
+    path('',home_page,name=’home’)
+]
+
+
+
+
+
+
+
+
+
+
+
+
+Ctrl + C = Break
