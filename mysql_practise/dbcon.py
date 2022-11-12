@@ -1,11 +1,11 @@
 #We need to install this: python -m pip install mysql-connector-python
 
 import mysql.connector
-mydb = connect(
-  host="103.187.31.18",
+mydb = mysql.connector.connect(
+  host="127.0.0.1",
   user="root",
-  port=5960,
-  database="billing",
+  port=3306,
+  database="",
   password="dhaka123"
 )
 
