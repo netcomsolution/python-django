@@ -1,8 +1,8 @@
 #We need to install this: python -m pip install mysql-connector-python
 
 import mysql.connector
-mydb = mysql.connector.connect(
-  host="localhost",
+mydb = connect(
+  host="103.187.31.18",
   user="root",
   port=5960,
   database="billing",
@@ -13,3 +13,5 @@ if mydb.is_connected:
         print("Mysql connected")
 else:
     print("Mysql not connected")
+
+mydb.close()
